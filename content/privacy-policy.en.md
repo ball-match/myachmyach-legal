@@ -77,17 +77,16 @@ Data is processed to the extent needed for the relevant purpose:
 | AppMetrica (Yandex) | Usage events, technical data and, with ATT permission, the relevant identifiers; analytics |
 | AppsFlyer | Installation information, usage events and technical data; with ATT permission, the relevant identifiers; attribution. The integration also sends the push token for uninstall measurement and processes push notification link data. |
 | Sentry | Crash reports and technical diagnostics to find and fix errors |
-| DigitalOcean, Frankfurt, Germany | Server hosting and processing of data sent to the app's backend |
 
-When joining sports events, participation data is available to relevant participants and organisers as needed for the feature. Sign-in providers are used when you choose that method. Sign-in and SDK providers may process data outside your country; we do not claim all their systems are in Germany. Contact us for requests about data we share.
+When joining sports events, participation data is available to relevant participants and organisers as needed for the feature. Sign-in providers are used when you choose that method. The sign-in and SDK providers listed in this section may process data outside the Russian Federation to the extent described here. Contact us for requests about data we share.
 
 Data may also be provided to competent authorities where and to the extent required by applicable law. The presence of an SDK does not itself mean it receives photos or chat content: actual data flows must match the data disclosed here.
 
 ## 8. Processing location, cross-border transfers and AI
 
-Service data is stored on DigitalOcean infrastructure in Frankfurt, Germany. Third-party services may process data elsewhere as described in section 7.
+Service data is stored on servers located in the Russian Federation. Some third-party services listed in section 7, “Data recipients”, process data outside the Russian Federation to the extent described in that section.
 
-By using the service, you agree to processing the data you submit on the stated infrastructure in Germany. Applicable personal data laws, including Russian Federal Law No. 152-FZ, continue to apply. Where applicable law requires separate consent or other steps, service use does not replace them.
+By using the service, you agree to processing the data you submit on servers in the Russian Federation and by the third-party services listed in section 7, including outside the Russian Federation, to the extent described there. Applicable personal data laws, including Russian Federal Law No. 152-FZ, continue to apply. Where applicable law requires separate consent or other steps, service use does not replace them.
 
 We do not use third-party generative AI services to process user photos, profiles or messages, including for moderation. Photos are reviewed by moderators.
 
