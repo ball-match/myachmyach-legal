@@ -72,7 +72,8 @@ def verify():
         revision = re.search(r'<time datetime="([^"]+)">', text)[1]
         date.fromisoformat(revision)
         revisions.add(revision)
-        assert '[EMAIL ДЛЯ ОБРАЩЕНИЙ]' in text
+        assert 'hello@ballball.ru' in text
+        assert '[' not in text, name
         parsed[name] = page
     assert len(revisions) == 1, revisions
     checked = 0

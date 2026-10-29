@@ -2,16 +2,16 @@
 
 End User Licence Agreement (EULA).
 
-Effective date: [ДАТА ВСТУПЛЕНИЯ В СИЛУ].
+Effective date: October 29, 2026.
 
 
 ## 1. Parties and acceptance
 
-This Agreement is between you and [НАИМЕНОВАНИЕ ЮРЛИЦА], tax identification number (INN) [ИНН], state registration number (OGRN) [ОГРН], address: [АДРЕС] (the “Developer”, “we”). **Apple is not a party to this Agreement.** The Developer, not Apple, is responsible for the app and its content.
+This Agreement is between you and the developer of the МячМяч app (the “Developer”, “we”). **Apple is not a party to this Agreement.** The Developer, not Apple, is responsible for the app and its content.
 
-This Agreement governs use of the Myachmyach iOS app and related service features. Read it before using the app. [ПОРЯДОК ПРИНЯТИЯ СОГЛАШЕНИЯ: согласовать юридически значимое действие принятия и его фиксацию с фактическим экраном регистрации до допуска к публикации пользовательского контента.]
+This Agreement governs use of the Myachmyach iOS app and related service features. Read it before using the app. By continuing sign-in or registration after the sign-in screen displays links to this Agreement and the Privacy Policy, you accept this Agreement. There is no separate checkbox or separate server record of the accepted Agreement version.
 
-If you do not agree, do not use the app. Personal data processing is described in the Privacy Policy at [URL ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ]. Acceptance of this Agreement is not consent to tracking or other operations requiring separate consent. The current Agreement is at [URL ПОЛЬЗОВАТЕЛЬСКОГО СОГЛАШЕНИЯ].
+If you do not agree, do not use the app. Personal data processing is described in the Privacy Policy at https://ball-match.github.io/myachmyach-legal/en/privacy/. Acceptance of this Agreement is not consent to tracking or other operations requiring separate consent. The current Agreement is at https://ball-match.github.io/myachmyach-legal/en/terms/.
 
 ## 2. Service purpose and age
 
@@ -122,14 +122,14 @@ You must comply with applicable third-party terms when using the app. This Agree
 
 ## 16. Changes, governing law and disputes
 
-New versions are published at [URL ПОЛЬЗОВАТЕЛЬСКОГО СОГЛАШЕНИЯ] with their effective date. [УВЕДОМЛЕНИЕ ОБ ИЗМЕНЕНИЯХ: определить реально доступный способ и срок предварительного уведомления о существенных изменениях.]
+New versions are published at https://ball-match.github.io/myachmyach-legal/en/terms/ with their effective date. Changes are announced by publishing a new version on this page with an updated date; a separate push notification or email is not guaranteed. Check the current version before continuing use. Material changes apply only after publication, and any required separate consent is requested separately.
 
 Where a change requires your separate consent, it will be obtained separately. Changes do not create paid obligations retroactively or replace purchase confirmation through Apple. If the new terms are not acceptable to you, you may stop using the app and delete your account.
 
-Governing law and dispute resolution: [ПРИМЕНИМОЕ ПРАВО И ПОРЯДОК РАЗРЕШЕНИЯ СПОРОВ]. Choice of law and court does not deprive users of mandatory protection or the right to bring proceedings in a location provided for by applicable consumer law. You may send a complaint to the contacts below before going to court; this does not restrict your right to judicial protection.
+Governing law and dispute resolution: the law of the Russian Federation applies. Disputes are first addressed by negotiation via hello@ballball.ru and, if unresolved, by a court at the developer’s location under Russian law. Choice of law and court does not deprive users of mandatory protection or the right to bring proceedings in a location provided for by applicable consumer law. You may send a complaint to the contacts below before going to court; this does not restrict your right to judicial protection.
 
 ## 17. Developer contacts
 
-Developer and operator: [НАИМЕНОВАНИЕ ЮРЛИЦА]. INN: [ИНН]. OGRN: [ОГРН]. Address: [АДРЕС]. Telephone: [ТЕЛЕФОН РАЗРАБОТЧИКА].
+Developer and operator: the developer of the МячМяч app.
 
-Support, content reports, questions and claims about the app: **hello@ballball.ru**. Legal enquiries and personal data: **[EMAIL ДЛЯ ОБРАЩЕНИЙ]**.
+Support, content reports, questions and claims about the app: **hello@ballball.ru**. Legal enquiries and personal data: **hello@ballball.ru**.

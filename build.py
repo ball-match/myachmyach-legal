@@ -126,7 +126,7 @@ def shell(page, lang, title, body, updated, switch, base=None):
 <footer><a href="{relative(page, 'en/privacy/index.html' if en else 'privacy/index.html')}">{'Privacy Policy' if en else 'Политика конфиденциальности'}</a>
 <a href="{relative(page, 'en/terms/index.html' if en else 'terms/index.html')}">{'Terms of Use' if en else 'Пользовательское соглашение'}</a>
 <p>{'Support' if en else 'Поддержка'}: <a href="mailto:hello@ballball.ru">hello@ballball.ru</a><br>
-{'Legal enquiries' if en else 'Юридические обращения'}: [EMAIL ДЛЯ ОБРАЩЕНИЙ]</p></footer>
+{'Legal enquiries' if en else 'Юридические обращения'}: <a href="mailto:hello@ballball.ru">hello@ballball.ru</a></p></footer>
 </body>
 </html>
 '''
@@ -161,7 +161,7 @@ def build(source, updated, base_path):
     (ROOT / '404.html').write_text(shell('404.html', 'ru', '404 — МячМяч', body404, updated, '<a href="index.html#ru">Русский</a> / <a href="index.html#en" lang="en">English</a>', base_path), encoding='utf-8')
     (ROOT / '.nojekyll').touch()
     placeholders = sorted(set(re.findall(r'\[[^\]\n]+\]', '\n'.join((content / name).read_text(encoding='utf-8') for name in FILES))))
-    (ROOT / 'PLACEHOLDERS.md').write_text('# Оставшиеся поля для заполнения\n\nВсего уникальных полей: ' + str(len(placeholders)) + '. Текст сохранён дословно.\n\n' + '\n'.join('- ' + p for p in placeholders) + '\n', encoding='utf-8')
+    (ROOT / 'PLACEHOLDERS.md').write_text('# Оставшиеся поля для заполнения\n\nВсего уникальных полей: ' + str(len(placeholders)) + '.\n' + ('\n'.join('- ' + p for p in placeholders) + '\n' if placeholders else ''), encoding='utf-8')
 
 
 if __name__ == '__main__':
