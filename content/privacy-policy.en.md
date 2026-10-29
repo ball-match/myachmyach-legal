@@ -50,7 +50,7 @@ We process data necessary to perform the Agreement and provide requested feature
 
 Camera, location and calendar permissions can also be changed in iOS settings. Withdrawing permission stops the corresponding access going forward but does not itself delete data already transferred; see sections 9–10 for deletion.
 
-AppMetrica may also receive device location when iOS permission is granted: the SDK’s default location collection is not disabled in the app. Accurate location collection and background updates are not enabled. Analytics providers also receive the IP address when connecting and may infer an approximate region from it; this does not depend on ATT permission.
+Analytics SDKs do not collect device geolocation. Location collection in AppMetrica is explicitly disabled regardless of ATT permission; coordinates are not passed manually to AppMetrica, AppsFlyer or Sentry. Location is used only on the device for the club map as described above; club requests may include the visible map bounds. Analytics providers also receive the IP address when connecting and may infer an approximate region from it; this does not depend on ATT permission.
 
 ## 6. Analytics, advertising and App Tracking Transparency
 
@@ -74,7 +74,7 @@ Data is processed to the extent needed for the relevant purpose:
 | Operator personnel authorised for support and moderation | Enquiries, reports and related data to review them and take action |
 | Apple, Google, Yandex | Information needed to sign in through the selected provider; the provider's own processing is also governed by its privacy policy |
 | Apple Push Notification service (APNs) | Push token and information needed to deliver notifications |
-| AppMetrica (Yandex) | Usage events, technical data and, with ATT permission, the relevant identifiers; analytics |
+| AppMetrica (Yandex) | Usage events, IP address and technical data and, with ATT permission, the relevant identifiers; analytics without device geolocation |
 | AppsFlyer | Installation information, usage events and technical data; with ATT permission, the relevant identifiers; attribution. The integration also sends the push token for uninstall measurement and processes push notification link data. |
 | Sentry | Crash reports and technical diagnostics to find and fix errors |
 
@@ -98,7 +98,7 @@ Data is kept only for the period necessary for its purpose and mandatory legal r
 | --- | --- |
 | Account, profile, photos, sports activity and interactions | While needed for an active account; limit for inactive accounts: 3 years since the last sign-in, after which the account is subject to deletion |
 | Messages, reports, blocks and support enquiries | Up to 1 year after account deletion; moderation evidence only as needed for safety and legal claims |
-| Location, push tokens, technical logs, analytics, attribution and crash reports | Technical logs and SDK data: up to 90 days; push tokens: until revocation or account deletion. Map coordinates are used on-device; AppMetrica location data: up to 90 days; server request logs containing map bounds: up to 90 days |
+| Location, push tokens, technical logs, analytics, attribution and crash reports | Technical logs and SDK data: up to 90 days; push tokens: until revocation or account deletion. Map coordinates are used on-device and are not collected by analytics SDKs; server request logs containing map bounds: up to 90 days |
 | Backups and copies held by processors | Up to 30 days after removal from active systems |
 
 

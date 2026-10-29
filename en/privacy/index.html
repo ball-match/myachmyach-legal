@@ -53,7 +53,7 @@
 <li><strong>Tracking:</strong> permission can be managed in iOS under Settings → Privacy &amp; Security → Tracking. Refusing does not prevent access to the app's core features.</li>
 </ol>
 <p>Camera, location and calendar permissions can also be changed in iOS settings. Withdrawing permission stops the corresponding access going forward but does not itself delete data already transferred; see sections 9–10 for deletion.</p>
-<p>AppMetrica may also receive device location when iOS permission is granted: the SDK’s default location collection is not disabled in the app. Accurate location collection and background updates are not enabled. Analytics providers also receive the IP address when connecting and may infer an approximate region from it; this does not depend on ATT permission.</p>
+<p>Analytics SDKs do not collect device geolocation. Location collection in AppMetrica is explicitly disabled regardless of ATT permission; coordinates are not passed manually to AppMetrica, AppsFlyer or Sentry. Location is used only on the device for the club map as described above; club requests may include the visible map bounds. Analytics providers also receive the IP address when connecting and may infer an approximate region from it; this does not depend on ATT permission.</p>
 <h2>6. Analytics, advertising and App Tracking Transparency</h2>
 <p>We use AppMetrica (Yandex) for analytics and AppsFlyer for installation attribution — identifying the advertising sources through which users discovered the app. Results are used to measure and improve advertising campaigns.</p>
 <p>Before activating AppMetrica and starting AppsFlyer, the app requests a decision through Apple's App Tracking Transparency (ATT) system prompt if no decision has been made and the prompt is available. If a decision already exists or access is restricted by the system, the current permission status applies.</p>
@@ -70,7 +70,7 @@
 <tr><td>Operator personnel authorised for support and moderation</td><td>Enquiries, reports and related data to review them and take action</td></tr>
 <tr><td>Apple, Google, Yandex</td><td>Information needed to sign in through the selected provider; the provider's own processing is also governed by its privacy policy</td></tr>
 <tr><td>Apple Push Notification service (APNs)</td><td>Push token and information needed to deliver notifications</td></tr>
-<tr><td>AppMetrica (Yandex)</td><td>Usage events, technical data and, with ATT permission, the relevant identifiers; analytics</td></tr>
+<tr><td>AppMetrica (Yandex)</td><td>Usage events, IP address and technical data and, with ATT permission, the relevant identifiers; analytics without device geolocation</td></tr>
 <tr><td>AppsFlyer</td><td>Installation information, usage events and technical data; with ATT permission, the relevant identifiers; attribution. The integration also sends the push token for uninstall measurement and processes push notification link data.</td></tr>
 <tr><td>Sentry</td><td>Crash reports and technical diagnostics to find and fix errors</td></tr>
 </tbody></table></div>
@@ -88,7 +88,7 @@
 </tr></thead><tbody>
 <tr><td>Account, profile, photos, sports activity and interactions</td><td>While needed for an active account; limit for inactive accounts: 3 years since the last sign-in, after which the account is subject to deletion</td></tr>
 <tr><td>Messages, reports, blocks and support enquiries</td><td>Up to 1 year after account deletion; moderation evidence only as needed for safety and legal claims</td></tr>
-<tr><td>Location, push tokens, technical logs, analytics, attribution and crash reports</td><td>Technical logs and SDK data: up to 90 days; push tokens: until revocation or account deletion. Map coordinates are used on-device; AppMetrica location data: up to 90 days; server request logs containing map bounds: up to 90 days</td></tr>
+<tr><td>Location, push tokens, technical logs, analytics, attribution and crash reports</td><td>Technical logs and SDK data: up to 90 days; push tokens: until revocation or account deletion. Map coordinates are used on-device and are not collected by analytics SDKs; server request logs containing map bounds: up to 90 days</td></tr>
 <tr><td>Backups and copies held by processors</td><td>Up to 30 days after removal from active systems</td></tr>
 </tbody></table></div>
 <p>You can delete your account in the app: <strong>Profile → Settings → Delete account («Удалить аккаунт»)</strong>. Unlike signing out or removing the app from your device, account deletion ends use of the profile and starts deletion of the associated data.</p>
