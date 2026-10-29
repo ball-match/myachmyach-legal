@@ -50,6 +50,8 @@ We process data necessary to perform the Agreement and provide requested feature
 
 Camera, location and calendar permissions can also be changed in iOS settings. Withdrawing permission stops the corresponding access going forward but does not itself delete data already transferred; see sections 9–10 for deletion.
 
+AppMetrica may also receive device location when iOS permission is granted: the SDK’s default location collection is not disabled in the app. Accurate location collection and background updates are not enabled. Analytics providers also receive the IP address when connecting and may infer an approximate region from it; this does not depend on ATT permission.
+
 ## 6. Analytics, advertising and App Tracking Transparency
 
 We use AppMetrica (Yandex) for analytics and AppsFlyer for installation attribution — identifying the advertising sources through which users discovered the app. Results are used to measure and improve advertising campaigns.
@@ -97,7 +99,7 @@ Data is kept only for the period necessary for its purpose and mandatory legal r
 | --- | --- |
 | Account, profile, photos, sports activity and interactions | While needed for an active account; limit for inactive accounts: 3 years since the last sign-in, after which the account is subject to deletion |
 | Messages, reports, blocks and support enquiries | Up to 1 year after account deletion; moderation evidence only as needed for safety and legal claims |
-| Location, push tokens, technical logs, analytics, attribution and crash reports | Technical logs and SDK data: up to 90 days; push tokens: until revocation or account deletion. Device coordinates are used on-device; server request logs containing map bounds: up to 90 days |
+| Location, push tokens, technical logs, analytics, attribution and crash reports | Technical logs and SDK data: up to 90 days; push tokens: until revocation or account deletion. Map coordinates are used on-device; AppMetrica location data: up to 90 days; server request logs containing map bounds: up to 90 days |
 | Backups and copies held by processors | Up to 30 days after removal from active systems |
 
 
